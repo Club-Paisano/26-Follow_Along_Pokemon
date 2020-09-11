@@ -1,0 +1,66 @@
+:root {
+  --base1: #1fad9f;
+  --base2: #cd3131;
+  --base3: #ab1212;
+  --base4: #f6c667;
+  font-size: 18px;
+}
+body {
+    background-color: var(--base1);
+}
+article {
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  width: 50%;
+  background-color: var(--base4);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+img {
+  margin-bottom: 10px;
+}
+
+span {
+  width: 35%;
+  display: block;
+  background-color: white;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
+
+  border: solid;
+  border-radius: 50px;
+  margin-bottom: 5px;
+
+}
+
+.slideOut {
+  width: 35%;
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
+  border-radius: 50px;
+  margin-bottom: 5px;
+
+  position: fixed;
+  width: 0;
+  transition: transform 0s, width .5s, height .5s, opacity .3s ;
+  opacity: 0;
+
+}
